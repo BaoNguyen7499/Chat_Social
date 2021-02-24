@@ -1,22 +1,27 @@
 {
-  "name": "chat_social",
-  "version": "1.0.0",
-  "description": "Chat-social",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/BaoNguyen7499/Chat_Social.git"
-  },
-  "author": "Phuc Bao",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/BaoNguyen7499/Chat_Social/issues"
-  },
-  "homepage": "https://github.com/BaoNguyen7499/Chat_Social#readme",
-  "dependencies": {
-    "express": "^4.17.1"
-  }
+    "name": "chat_social",
+    "version": "1.0.0",
+    "description": "Chat-social",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "babel-node server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/BaoNguyen7499/Chat_Social.git"
+    },
+    "author": "Phuc Bao",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/BaoNguyen7499/Chat_Social/issues"
+    },
+    "homepage": "https://github.com/BaoNguyen7499/Chat_Social#readme",
+    "dependencies": {
+        "express": "^4.17.1"
+    },
+    "devDependencies": {
+        "babel-cli": "^6.26.0",
+        "babel-preset-env": "^1.7.0"
+    }
 }
