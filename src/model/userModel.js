@@ -12,7 +12,7 @@ let UserSchema = new Schema({
     local: {
         email: { type: String, trim: true },
         password: String,
-        isActive: { type: String, default: false },
+        isActive: { type: Boolean, default: false },
         verifyToken: String,
     },
     facebook: {
@@ -30,4 +30,12 @@ let UserSchema = new Schema({
     deletedAt: { type: Number, default: null },
 });
 
+UserSchema.statics = {
+    createNew(item) {
+        return this.create(item);
+    },
+    findByEmail(email) {
+        return this.findOne({ "local.email": email }).exec();
+    }
+};
 module.exports = mongoose.model("user", UserSchema);
